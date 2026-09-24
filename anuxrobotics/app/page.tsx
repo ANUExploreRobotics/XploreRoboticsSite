@@ -12,7 +12,7 @@ export default function Home() {
         <div className="hero-image absolute inset-0">
           <video
               className="object-cover w-full h-full"
-              src="https://8ibw5t5babbgnqif.public.blob.vercel-storage.com/211375.mp4"
+              src="/211375.mp4"
               autoPlay
               muted
               loop
