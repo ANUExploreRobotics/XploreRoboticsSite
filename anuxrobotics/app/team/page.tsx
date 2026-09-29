@@ -18,7 +18,8 @@ const teamGroups = [
     blurb: "Designs and builds the submarine's structure and hardware.",
     members: [
       { name: "Bryn Whitaker", role: "Mechanical Lead" },
-      { name: "TODO Name", role: "Member" },
+      { name: "Finn Wilson", role: "Member" },
+      { name: "Liam Fouracre", role: "Member" },
     ],
   },
   {
@@ -34,7 +35,8 @@ const teamGroups = [
     blurb: "Develops control, navigation, and scanning software.",
     members: [
       { name: "Joel Crispe", role: "Software Lead" },
-      { name: "TODO Name", role: "Member" },
+      { name: "Matthew Lloyd", role: "Member" },
+      { name: "Jeremy Firth", role: "Member" },
     ],
   },
   {
@@ -46,6 +48,14 @@ const teamGroups = [
     ],
   },
 ];
+
+// Turns "Mert Boyali" into "mert-boyali" so photo filenames are predictable
+function slugify(name: string) {
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
 
 export default function TeamPage() {
   return (
@@ -69,8 +79,8 @@ export default function TeamPage() {
         </p>
         <p className="mt-3 text-sm text-white/50">
           Get in touch:{" "}
-          <a 
-            href="mailto:anuexplorationrobotics@gmail.com" 
+          <a
+            href="mailto:anuexplorationrobotics@gmail.com"
             className="text-[var(--coral)]"
           >
             anuexplorationrobotics@gmail.com
@@ -90,9 +100,16 @@ export default function TeamPage() {
           <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4">
             {group.members.map((member, i) => (
               <div key={i}>
+                {/*
+                  TODO: drop a photo into /public/team/ named exactly
+                  "<slugified-name>.jpg" (e.g. mert-boyali.jpg) and it'll
+                  appear here automatically. Until then, the gradient shows.
+                */}
                 <div
-                  className="mb-3.5 aspect-square rounded-sm"
-                  style={{ background: "linear-gradient(150deg, #2a323a, #1a2027)" }}
+                  className="mb-3.5 aspect-square rounded-sm bg-cover bg-center"
+                  style={{
+                    backgroundImage: `url(/team/${slugify(member.name)}.jpg), linear-gradient(150deg, #2a323a, #1a2027)`,
+                  }}
                 />
                 <h4 className="font-display text-sm font-semibold">{member.name}</h4>
                 <span className="text-xs text-white/50">{member.role}</span>
