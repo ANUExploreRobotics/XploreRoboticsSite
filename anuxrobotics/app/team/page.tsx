@@ -20,6 +20,8 @@ const teamGroups = [
       { name: "Bryn Whitaker", role: "Mechanical Lead" },
       { name: "Finn Wilson", role: "Member" },
       { name: "Liam Fouracre", role: "Member" },
+      { name: "Alex Jurgs", role: "Member" },
+      { name: "Levi Pau", role: "Member" },
     ],
   },
   {
@@ -27,7 +29,10 @@ const teamGroups = [
     blurb: "Handles wiring, sensors, and onboard hardware.",
     members: [
       { name: "Dasun Weliwita", role: "Electronics Lead" },
-      { name: "TODO Name", role: "Member" },
+      { name: "Rani Mamootil", role: "Member" },
+      { name: "Ryan Marshall", role: "Member" },
+      { name: "Jackson McDougall", role: "Member" },
+      { name: "Chithi Gunatilake", role: "Member" },
     ],
   },
   {
@@ -37,6 +42,7 @@ const teamGroups = [
       { name: "Joel Crispe", role: "Software Lead" },
       { name: "Matthew Lloyd", role: "Member" },
       { name: "Jeremy Firth", role: "Member" },
+      { name: "Tahlia Chambers", role: "Member" },
     ],
   },
   {
