@@ -2,12 +2,46 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import MobileMenu from './MobileMenu';
+import { searchSite, type SearchResult } from '@/lib/searchIndex';
+
+function HighlightedSnippet({ result }: { result: SearchResult }) {
+    const before = result.snippet.slice(0, result.matchStart);
+    const match = result.snippet.slice(
+        result.matchStart,
+        result.matchStart + result.matchLength
+    );
+    const after = result.snippet.slice(result.matchStart + result.matchLength);
+
+    return (
+        <p className="mt-1 text-sm leading-6 text-white/60">
+            {before}
+            <mark className="rounded-sm bg-[var(--coral)]/30 px-0.5 text-white">
+                {match}
+            </mark>
+            {after}
+        </p>
+    );
+}
 
 export default function NavBar(){
     const [query, setQuery] = useState('');
+    const [panelOpen, setPanelOpen] = useState(false);
+    const [results, setResults] = useState<SearchResult[]>([]);
+
+    useEffect(() => {
+        if (!panelOpen) return;
+        searchSite(query).then(setResults);
+    }, [query, panelOpen]);
+
+    const openPanel = () => setPanelOpen(true);
+    const closePanel = () => {
+        setPanelOpen(false);
+        setQuery('');
+        setResults([]);
+    };
 
     return(
         <nav className="flex items-center gap-16">
@@ -15,7 +49,6 @@ export default function NavBar(){
                 <Link href="/">
                     <Image src="/logo.png" alt="Exploration Robotics logo" width={200} height={40} />
                 </Link>
-
             </div>
 
             {/* DESKTOP MENU */}
@@ -67,30 +100,83 @@ export default function NavBar(){
                     </Link>
                 </li>
                 <li>
-                    <form
-                        onSubmit={(e) => {
-                            e.preventDefault();
-                            console.log('search for:', query);
-                        }}
-                        className="flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-3 py-1.5"
+                    <button
+                        type="button"
+                        onClick={openPanel}
+                        aria-label="Open search"
+                        className="flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-3 py-1.5 text-white/60 transition-colors hover:border-[var(--coral)] hover:text-white"
                     >
-                        <svg viewBox="0 0 24 24" className="h-3.5 w-3.5 flex-shrink-0 text-white/60" fill="none" stroke="currentColor" strokeWidth="2">
+                        <svg viewBox="0 0 24 24" className="h-3.5 w-3.5 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2">
                             <circle cx="11" cy="11" r="7" />
                             <line x1="21" y1="21" x2="16.65" y2="16.65" />
                         </svg>
-                        <input
-                            type="text"
-                            value={query}
-                            onChange={(e) => setQuery(e.target.value)}
-                            placeholder="Search"
-                            aria-label="Search the site"
-                            className="w-24 bg-transparent text-sm text-white placeholder-white/50 outline-none"
-                        />
-                    </form>
+                        <span className="text-sm">Search</span>
+                    </button>
                 </li>
             </ul>
 
             <MobileMenu/>
+
+            {/* SEARCH PANEL */}
+            <div
+                onClick={closePanel}
+                className={`fixed inset-0 z-40 bg-black/60 transition-opacity duration-300 ${
+                    panelOpen ? "opacity-100" : "pointer-events-none opacity-0"
+                }`}
+            />
+            <div
+                className={`fixed right-0 top-0 z-50 h-full w-full max-w-[420px] transform bg-[var(--deep)] shadow-2xl transition-transform duration-300 ease-out ${
+                    panelOpen ? "translate-x-0" : "translate-x-full"
+                }`}
+            >
+                <div className="flex items-center gap-3 border-b border-[var(--line)] px-6 py-5">
+                    <svg viewBox="0 0 24 24" className="h-4 w-4 flex-shrink-0 text-white/50" fill="none" stroke="currentColor" strokeWidth="2">
+                        <circle cx="11" cy="11" r="7" />
+                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    </svg>
+                    <input
+                        autoFocus={panelOpen}
+                        type="text"
+                        value={query}
+                        onChange={(e) => setQuery(e.target.value)}
+                        placeholder="Search the site..."
+                        aria-label="Search the site"
+                        className="flex-1 bg-transparent text-base text-white placeholder-white/40 outline-none"
+                    />
+                    <button
+                        type="button"
+                        onClick={closePanel}
+                        aria-label="Close search"
+                        className="text-white/50 transition-colors hover:text-white"
+                    >
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" fill="none">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+
+                <div className="flex flex-col gap-1 overflow-y-auto px-4 py-4" style={{ maxHeight: "calc(100% - 76px)" }}>
+                    {query && results.length === 0 && (
+                        <p className="px-2 py-4 text-sm text-white/50">No results found.</p>
+                    )}
+                    {results.map((result, i) => (
+                        <Link
+                            key={i}
+                            href={`${result.url}#:~:text=${encodeURIComponent(
+                                result.snippet.slice(result.matchStart, result.matchStart + result.matchLength)
+                            )}`}
+                            onClick={closePanel}
+                            className="block rounded-sm px-3 py-3 transition-colors hover:bg-white/5"
+                        >
+                            <span className="text-xs font-semibold uppercase tracking-wide text-[var(--coral)]">
+                                {result.page}
+                            </span>
+                            <HighlightedSnippet result={result} />
+                        </Link>
+                    ))}
+                </div>
+            </div>
         </nav>
     );
 }

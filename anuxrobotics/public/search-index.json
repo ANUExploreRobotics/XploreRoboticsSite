@@ -1,0 +1,1002 @@
+[
+  {
+    "page": "Contact",
+    "url": "/contact",
+    "text": "POST"
+  },
+  {
+    "page": "Contact",
+    "url": "/contact",
+    "text": "application/json"
+  },
+  {
+    "page": "Contact",
+    "url": "/contact",
+    "text": "Get in touch"
+  },
+  {
+    "page": "Contact",
+    "url": "/contact",
+    "text": "Contact"
+  },
+  {
+    "page": "Contact",
+    "url": "/contact",
+    "text": "Questions, sponsorship enquiries, or want to join the team? Reach out - we&apos;d love to hear from you."
+  },
+  {
+    "page": "Contact",
+    "url": "/contact",
+    "text": "Email"
+  },
+  {
+    "page": "Contact",
+    "url": "/contact",
+    "text": "anuexplorationrobotics@gmail.com"
+  },
+  {
+    "page": "Contact",
+    "url": "/contact",
+    "text": "Based at"
+  },
+  {
+    "page": "Contact",
+    "url": "/contact",
+    "text": "Australian National University, Canberra"
+  },
+  {
+    "page": "Contact",
+    "url": "/contact",
+    "text": "Socials"
+  },
+  {
+    "page": "Contact",
+    "url": "/contact",
+    "text": "Instagram"
+  },
+  {
+    "page": "Contact",
+    "url": "/contact",
+    "text": "LinkedIn"
+  },
+  {
+    "page": "Contact",
+    "url": "/contact",
+    "text": "Interested in sponsoring us instead?"
+  },
+  {
+    "page": "Contact",
+    "url": "/contact",
+    "text": "See our sponsors page →"
+  },
+  {
+    "page": "Contact",
+    "url": "/contact",
+    "text": "Name"
+  },
+  {
+    "page": "Contact",
+    "url": "/contact",
+    "text": "Message"
+  },
+  {
+    "page": "Contact",
+    "url": "/contact",
+    "text": "Thanks! Your message has been sent."
+  },
+  {
+    "page": "Contact",
+    "url": "/contact",
+    "text": "Something went wrong. Please try again."
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Move under control in surge, heave through buoyancy control, and yaw, with passively stable roll and pitch."
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Demonstration"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Remain watertight to a depth of 2.1 metres, being 20.6 kPa."
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Test"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Sit within 0.5 per cent of neutral buoyancy when shut off."
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Run on battery power, with variable control of acceleration and velocity."
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Carry a clear and accessible propulsion kill switch at the stern."
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Allow major components to be accessed or replaced without redesign."
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Inspection"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Leave provision for later autonomy, sensing and task mechanisms."
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Aug 2026"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Requirements review"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Sep 2026"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Preliminary design review"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Oct 2026"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Critical design review"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Nov/Dec 2026"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Implementation and assembly"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Jan/Feb 2027"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Test readiness review"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Mar 2027"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Pool trials and verification"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Apr 2027"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Validation and closeout"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Aug 2027"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "RoboSub target cycle"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Marine reef and wildlife conservation"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "We hope to explore the use of robotics to observe and map ocean wildlife. Robotics of this kind can have a tremendous impact on the conservation of coral reef systems and wildlife populations through monitoring and scanning them."
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "The UAV Challenge: Outback Rescue"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "An Australian competition in which an autonomous aircraft must locate a stranded person, represented by a mannequin known as Outback Joe, and complete a retrieval or delivery task. Entering would take the club beyond underwater vehicles into aerial systems, drawing on the same work in autonomy, perception and vehicle design."
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Depth project"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "An attempt at a depth record for a vehicle designed and built entirely by undergraduates. The engineering sits in pressure housing design, seal and penetrator selection, and structural analysis at depths far beyond anything a pool can be used to test, which makes analysis and proof testing the whole of the problem."
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Logo on the sub"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Placement on the hull of the vehicle, subject to available surface area and, where the vehicle is entered in a competition, to the rules of that competition."
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Logo on our website"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Placement on the supporters section of the club website for the duration of the sponsorship."
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Invitations to our meetings and events"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Sponsors are welcome at club meetings, design reviews and pool trials, and are invited to the events we run through the year."
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Features on our social media and videos"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Promotion across our social media posts and video content, including build logs and footage from testing and competition."
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "ANU Exploration Robotics — per aspera ad profunda"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Prospectus"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Exploring and surveying the world around us with custom-made autonomous robots."
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "2026 / 2027"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Who we are"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "What the club does"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "ANU Exploration Robotics is a student-run club operating in Canberra. Our focus is on the exploration and surveying of the world around us through the use of custom-made, autonomous robots. To accommodate this goal, we enter competitions on the world stage, allowing us and our robots to gain experience that can be used on sustainable initiatives."
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Membership is open to students of any year level and any discipline, and no prior robotics experience is required."
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Mission objectives"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Initial goals"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "To make a submarine for the RobotX RoboSub competition, and complete as many tasks in the competition as possible."
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "RoboSub"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "RoboSub is an international student competition run by RoboNation and held annually in the United States. Teams build autonomous underwater vehicles that complete a course of tasks with no operator input and no tether once the vehicle is released. Tasks include navigating gates, identifying and localising objects by computer vision, homing on acoustic pingers, and releasing markers. Teams are also assessed on a technical design report and a design presentation."
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Prototype 1.0"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Prototype 1.0 is a tethered underwater vehicle controlled by an operator from an offboard computer. It is the foundation for a competition vehicle rather than an entry in itself, and is required to meet the following."
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Requirement"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Verification"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Timeline"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Looking ahead"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Future directions"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Although our current goals align with submarine development for the RobotX RoboSub competition, in the future we are looking forward to expanding our design principles into other design projects and different vehicles. These future projects would include:"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Support"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Sponsorship benefits"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "The club is funded through the university, member contributions and external support. Sponsorship goes toward thrusters and motor controllers, seals and hull penetrators, enclosure machining and 3D printing, batteries and power management, cameras and sensing, embedded compute, tether and connectors, and pool hire for testing."
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Support in kind is as useful to us as cash. Components, machining or fabrication time, workshop access and technical mentoring all contribute directly to the build. Sponsors receive the following."
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "The scale of placement and any further arrangements are agreed directly, and we are glad to discuss what would suit a particular organisation."
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "All sponsorships are accepted on the condition that they align with the club&apos;s values, academic integrity and commitment to safe practice, and with university policy. The club operates independently of any commercial entity and under the governance of university policies and student club regulations."
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "ANU Exploration Robotics"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "[Room / building], Australian National University,"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Canberra, ACT 2600, Australia"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "General enquiries"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "[club email]"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "President"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "[president email]"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Secretary"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "[secretary email]"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Treasurer"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "[treasurer email]"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Website"
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "[website]"
+  },
+  {
+    "page": "Home",
+    "url": "/",
+    "text": "Scroll"
+  },
+  {
+    "page": "Home",
+    "url": "/",
+    "text": "Exploration"
+  },
+  {
+    "page": "Home",
+    "url": "/",
+    "text": "Robotics"
+  },
+  {
+    "page": "Home",
+    "url": "/",
+    "text": "Lorem Ipsum bla bla bla"
+  },
+  {
+    "page": "Home",
+    "url": "/",
+    "text": "Learn more"
+  },
+  {
+    "page": "Home",
+    "url": "/",
+    "text": "Build Progress"
+  },
+  {
+    "page": "Home",
+    "url": "/",
+    "text": "Latest subs"
+  },
+  {
+    "page": "Home",
+    "url": "/",
+    "text": "Learn more →"
+  },
+  {
+    "page": "Home",
+    "url": "/",
+    "text": "Status/Date"
+  },
+  {
+    "page": "Home",
+    "url": "/",
+    "text": "Coming soon..."
+  },
+  {
+    "page": "Home",
+    "url": "/",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "page": "Home",
+    "url": "/",
+    "text": "Ut enim ad minim veniam, quis nostrud exercitation."
+  },
+  {
+    "page": "Home",
+    "url": "/",
+    "text": "Excepteur sint occaecat cupidatat non proident."
+  },
+  {
+    "page": "Home",
+    "url": "/",
+    "text": "linear-gradient(200deg, #0e7a8f, #052437 75%)"
+  },
+  {
+    "page": "Home",
+    "url": "/",
+    "text": "Who we are"
+  },
+  {
+    "page": "Home",
+    "url": "/",
+    "text": "About us"
+  },
+  {
+    "page": "Home",
+    "url": "/",
+    "text": "ANU Exploration Robotics is a student-run team designing and building an autonomous underwater vehicle for the RobotX RoboSub competition. We&apos;re currently developing Prototype 1.0 — a tethered proof-of-concept vehicle that demonstrates controlled underwater movement, laying the foundation for a fully autonomous competition vehicle to follow."
+  },
+  {
+    "page": "Home",
+    "url": "/",
+    "text": "We&apos;re a small, hands-on crew spanning mechanical, electrical, software, and business — following a disciplined design process from requirements through to in-water testing. Always looking for people who want to build something real."
+  },
+  {
+    "page": "Home",
+    "url": "/",
+    "text": "Contact us"
+  },
+  {
+    "page": "Home",
+    "url": "/",
+    "text": "linear-gradient(160deg, #0a5c73, #1fc4a8)"
+  },
+  {
+    "page": "Home",
+    "url": "/",
+    "text": "Who&apos;s building it"
+  },
+  {
+    "page": "Home",
+    "url": "/",
+    "text": "Meet the team"
+  },
+  {
+    "page": "Home",
+    "url": "/",
+    "text": "Leads strategy, planning, and overall project direction"
+  },
+  {
+    "page": "Home",
+    "url": "/",
+    "text": "Designs and builds the submarine's structure and hardware"
+  },
+  {
+    "page": "Home",
+    "url": "/",
+    "text": "Handles wiring, sensors, and onboard hardware"
+  },
+  {
+    "page": "Home",
+    "url": "/",
+    "text": "Develops control, navigation, and scanning software"
+  },
+  {
+    "page": "Home",
+    "url": "/",
+    "text": "Manages sponsorships, outreach, and public communications"
+  },
+  {
+    "page": "Home",
+    "url": "/",
+    "text": "linear-gradient(150deg, #2a323a, #1a2027)"
+  },
+  {
+    "page": "Home",
+    "url": "/",
+    "text": "Sponsor"
+  },
+  {
+    "page": "Partners",
+    "url": "/sponsors",
+    "text": "Support us"
+  },
+  {
+    "page": "Partners",
+    "url": "/sponsors",
+    "text": "Sponsors"
+  },
+  {
+    "page": "Partners",
+    "url": "/sponsors",
+    "text": "ANU Exploration Robotics is entirely student-run and relies on sponsorship to build and compete. Partnering with us puts your brand in front of a competition audience while supporting hands-on engineering education."
+  },
+  {
+    "page": "Partners",
+    "url": "/sponsors",
+    "text": "Thank you"
+  },
+  {
+    "page": "Partners",
+    "url": "/sponsors",
+    "text": "Our sponsors"
+  },
+  {
+    "page": "Partners",
+    "url": "/sponsors",
+    "text": "Sponsor"
+  },
+  {
+    "page": "Partners",
+    "url": "/sponsors",
+    "text": "Interested in partnering with us? We&apos;d love to talk."
+  },
+  {
+    "page": "Partners",
+    "url": "/sponsors",
+    "text": "Get in touch"
+  },
+  {
+    "page": "Team",
+    "url": "/team",
+    "text": "Executive Team"
+  },
+  {
+    "page": "Team",
+    "url": "/team",
+    "text": "Leads strategy, planning, and overall project direction."
+  },
+  {
+    "page": "Team",
+    "url": "/team",
+    "text": "President"
+  },
+  {
+    "page": "Team",
+    "url": "/team",
+    "text": "Vice President"
+  },
+  {
+    "page": "Team",
+    "url": "/team",
+    "text": "Treasurer"
+  },
+  {
+    "page": "Team",
+    "url": "/team",
+    "text": "Secretary"
+  },
+  {
+    "page": "Team",
+    "url": "/team",
+    "text": "Mechanical Team"
+  },
+  {
+    "page": "Team",
+    "url": "/team",
+    "text": "Designs and builds the submarine's structure and hardware."
+  },
+  {
+    "page": "Team",
+    "url": "/team",
+    "text": "Mechanical Lead"
+  },
+  {
+    "page": "Team",
+    "url": "/team",
+    "text": "Member"
+  },
+  {
+    "page": "Team",
+    "url": "/team",
+    "text": "Electronics Team"
+  },
+  {
+    "page": "Team",
+    "url": "/team",
+    "text": "Handles wiring, sensors, and onboard hardware."
+  },
+  {
+    "page": "Team",
+    "url": "/team",
+    "text": "Electronics Lead"
+  },
+  {
+    "page": "Team",
+    "url": "/team",
+    "text": "Software Team"
+  },
+  {
+    "page": "Team",
+    "url": "/team",
+    "text": "Develops control, navigation, and scanning software."
+  },
+  {
+    "page": "Team",
+    "url": "/team",
+    "text": "Software Lead"
+  },
+  {
+    "page": "Team",
+    "url": "/team",
+    "text": "Business & Marketing Team"
+  },
+  {
+    "page": "Team",
+    "url": "/team",
+    "text": "Manages sponsorships, outreach, and public communications."
+  },
+  {
+    "page": "Team",
+    "url": "/team",
+    "text": "Business Lead"
+  },
+  {
+    "page": "Team",
+    "url": "/team",
+    "text": "Who we are"
+  },
+  {
+    "page": "Team",
+    "url": "/team",
+    "text": "Team"
+  },
+  {
+    "page": "Team",
+    "url": "/team",
+    "text": "ANU Exploration Robotics is a student-run team spanning mechanical, electrical, software, and business - working together to design and build an autonomous underwater vehicle for the RobotX RoboSub competition."
+  },
+  {
+    "page": "Team",
+    "url": "/team",
+    "text": "Get in touch:"
+  },
+  {
+    "page": "Team",
+    "url": "/team",
+    "text": "anuexplorationrobotics@gmail.com"
+  },
+  {
+    "page": "Team",
+    "url": "/team",
+    "text": "This team is proudly supported by our sponsors - their backing makes our build possible."
+  },
+  {
+    "page": "Team",
+    "url": "/team",
+    "text": "See our sponsors →"
+  },
+  {
+    "page": "Updates",
+    "url": "/updates",
+    "text": "TODO Month 2026"
+  },
+  {
+    "page": "Updates",
+    "url": "/updates",
+    "text": "Milestone"
+  },
+  {
+    "page": "Updates",
+    "url": "/updates",
+    "text": "TODO update title"
+  },
+  {
+    "page": "Updates",
+    "url": "/updates",
+    "text": "TODO - short summary of what happened, what was tested, or what shipped."
+  },
+  {
+    "page": "Updates",
+    "url": "/updates",
+    "text": "Build log"
+  },
+  {
+    "page": "Updates",
+    "url": "/updates",
+    "text": "Testing"
+  },
+  {
+    "page": "Updates",
+    "url": "/updates",
+    "text": "Build progress"
+  },
+  {
+    "page": "Updates",
+    "url": "/updates",
+    "text": "Updates"
+  },
+  {
+    "page": "Updates",
+    "url": "/updates",
+    "text": "Milestones, build logs, and testing notes as Prototype 1.0 comes together."
+  },
+  {
+    "page": "Vehicle",
+    "url": "/vehicle",
+    "text": "Vehicle name"
+  },
+  {
+    "page": "Vehicle",
+    "url": "/vehicle",
+    "text": "Prototype 1.0"
+  },
+  {
+    "page": "Vehicle",
+    "url": "/vehicle",
+    "text": "Type"
+  },
+  {
+    "page": "Vehicle",
+    "url": "/vehicle",
+    "text": "Tethered proof-of-concept"
+  },
+  {
+    "page": "Vehicle",
+    "url": "/vehicle",
+    "text": "Target depth"
+  },
+  {
+    "page": "Vehicle",
+    "url": "/vehicle",
+    "text": "TODO m"
+  },
+  {
+    "page": "Vehicle",
+    "url": "/vehicle",
+    "text": "Propulsion"
+  },
+  {
+    "page": "Vehicle",
+    "url": "/vehicle",
+    "text": "TODO thrusters"
+  },
+  {
+    "page": "Vehicle",
+    "url": "/vehicle",
+    "text": "Power"
+  },
+  {
+    "page": "Vehicle",
+    "url": "/vehicle",
+    "text": "TODO"
+  },
+  {
+    "page": "Vehicle",
+    "url": "/vehicle",
+    "text": "Dimensions"
+  },
+  {
+    "page": "Vehicle",
+    "url": "/vehicle",
+    "text": "TODO cm"
+  },
+  {
+    "page": "Vehicle",
+    "url": "/vehicle",
+    "text": "Mechanical"
+  },
+  {
+    "page": "Vehicle",
+    "url": "/vehicle",
+    "text": "Structure & hardware"
+  },
+  {
+    "page": "Vehicle",
+    "url": "/vehicle",
+    "text": "TODO - hull design, frame material, watertight housing, and buoyancy approach."
+  },
+  {
+    "page": "Vehicle",
+    "url": "/vehicle",
+    "text": "Electronics"
+  },
+  {
+    "page": "Vehicle",
+    "url": "/vehicle",
+    "text": "Wiring & sensors"
+  },
+  {
+    "page": "Vehicle",
+    "url": "/vehicle",
+    "text": "TODO - power distribution, sensor suite, and onboard hardware layout."
+  },
+  {
+    "page": "Vehicle",
+    "url": "/vehicle",
+    "text": "Software"
+  },
+  {
+    "page": "Vehicle",
+    "url": "/vehicle",
+    "text": "Control & navigation"
+  },
+  {
+    "page": "Vehicle",
+    "url": "/vehicle",
+    "text": "TODO - control loop, navigation stack, and seabed-scanning pipeline."
+  },
+  {
+    "page": "Vehicle",
+    "url": "/vehicle",
+    "text": "What we&apos;re building"
+  },
+  {
+    "page": "Vehicle",
+    "url": "/vehicle",
+    "text": "Vehicle"
+  },
+  {
+    "page": "Vehicle",
+    "url": "/vehicle",
+    "text": "We&apos;re currently developing Prototype 1.0 - a tethered proof-of-concept vehicle that demonstrates controlled underwater movement, laying the foundation for a fully autonomous competition vehicle to follow."
+  },
+  {
+    "page": "Vehicle",
+    "url": "/vehicle",
+    "text": "How it works"
+  },
+  {
+    "page": "Vehicle",
+    "url": "/vehicle",
+    "text": "Systems breakdown"
+  },
+  {
+    "page": "Vehicle",
+    "url": "/vehicle",
+    "text": "linear-gradient(160deg, #0a5c73, #1fc4a8)"
+  },
+  {
+    "page": "Vehicle",
+    "url": "/vehicle",
+    "text": "In the workshop"
+  },
+  {
+    "page": "Vehicle",
+    "url": "/vehicle",
+    "text": "Gallery"
+  },
+  {
+    "page": "Vehicle",
+    "url": "/vehicle",
+    "text": "linear-gradient(150deg, #2a323a, #1a2027)"
+  }
+]
