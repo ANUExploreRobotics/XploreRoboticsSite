@@ -2,7 +2,8 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import { useRouter } from 'next/navigation';
 
 import MobileMenu from './MobileMenu';
 import { searchSite, type SearchResult } from '@/lib/searchIndex';
@@ -27,20 +28,40 @@ function HighlightedSnippet({ result }: { result: SearchResult }) {
 }
 
 export default function NavBar(){
+    const router = useRouter();
     const [query, setQuery] = useState('');
     const [panelOpen, setPanelOpen] = useState(false);
     const [results, setResults] = useState<SearchResult[]>([]);
+    const inputRef = useRef<HTMLInputElement>(null);
 
     useEffect(() => {
         if (!panelOpen) return;
         searchSite(query).then(setResults);
     }, [query, panelOpen]);
 
+    useEffect(() => {
+        if (panelOpen) {
+            // slight delay so focus happens after the slide-in transition starts
+            const t = setTimeout(() => inputRef.current?.focus(), 50);
+            return () => clearTimeout(t);
+        }
+    }, [panelOpen]);
+
     const openPanel = () => setPanelOpen(true);
     const closePanel = () => {
         setPanelOpen(false);
         setQuery('');
         setResults([]);
+    };
+
+    const goToResult = (result: SearchResult) => {
+        const cleanSnippet = result.snippet.replace(/^…/, '').replace(/…$/, '');
+        sessionStorage.setItem(
+            'pendingScrollText',
+            JSON.stringify({ url: result.url, text: cleanSnippet })
+        );
+        router.push(result.url);
+        closePanel();
     };
 
     return(
@@ -135,7 +156,7 @@ export default function NavBar(){
                         <line x1="21" y1="21" x2="16.65" y2="16.65" />
                     </svg>
                     <input
-                        autoFocus={panelOpen}
+                        ref={inputRef}
                         type="text"
                         value={query}
                         onChange={(e) => setQuery(e.target.value)}
@@ -161,19 +182,17 @@ export default function NavBar(){
                         <p className="px-2 py-4 text-sm text-white/50">No results found.</p>
                     )}
                     {results.map((result, i) => (
-                        <Link
+                        <button
                             key={i}
-                            href={`${result.url}#:~:text=${encodeURIComponent(
-                                result.snippet.slice(result.matchStart, result.matchStart + result.matchLength)
-                            )}`}
-                            onClick={closePanel}
-                            className="block rounded-sm px-3 py-3 transition-colors hover:bg-white/5"
+                            type="button"
+                            onClick={() => goToResult(result)}
+                            className="block w-full rounded-sm px-3 py-3 text-left transition-colors hover:bg-white/5"
                         >
                             <span className="text-xs font-semibold uppercase tracking-wide text-[var(--coral)]">
                                 {result.page}
                             </span>
                             <HighlightedSnippet result={result} />
-                        </Link>
+                        </button>
                     ))}
                 </div>
             </div>

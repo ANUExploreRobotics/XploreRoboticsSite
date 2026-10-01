@@ -86,3 +86,13 @@ h1, h2, h3, .font-display {
   background: white;
   animation: scrollTick 1.8s ease-in-out infinite;
 }
+
+.search-highlight-flash {
+  animation: highlightFlash 5s ease-out;
+  border-radius: 4px;
+}
+
+@keyframes highlightFlash {
+  0% { background-color: rgba(236, 115, 104, 0.35); }
+  100% { background-color: transparent; }
+}
