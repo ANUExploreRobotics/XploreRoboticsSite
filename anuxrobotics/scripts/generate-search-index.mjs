@@ -38,11 +38,39 @@ function decodeEntities(str) {
     .replace(/&gt;/g, ">");
 }
 
-const NAV_LABELS = new Set([
-  "about", "team", "mission", "partners", "vehicle", "updates",
-  "contact", "search", "home", "anu exploration robotics",
-  "anu exploration robotics - robosub team",
+const NAV_RUN_WORDS = new Set([
+  "anu", "exploration", "robotics", "scroll",
+  "about", "team", "mission", "partners", "vehicle",
+  "updates", "contact", "search",
 ]);
+
+function stripNavRuns(text) {
+  const tokens = text.split(/\s+/);
+  const result = [];
+  let i = 0;
+
+  while (i < tokens.length) {
+    let j = i;
+    while (
+      j < tokens.length &&
+      NAV_RUN_WORDS.has(tokens[j].toLowerCase().replace(/[^a-z]/g, ""))
+    ) {
+      j++;
+    }
+    const runLength = j - i;
+
+    if (runLength >= 4) {
+      // 4+ consecutive nav-ish words in a row — almost certainly the nav bar
+      // or logo text, not a real sentence. Drop the whole run.
+      i = j;
+    } else {
+      result.push(tokens[i]);
+      i++;
+    }
+  }
+
+  return result.join(" ").trim();
+}
 
 function htmlToChunks(html) {
   let clean = html.replace(/<script[\s\S]*?<\/script>/gi, " ");
@@ -53,14 +81,8 @@ function htmlToChunks(html) {
     .split("\n")
     .map((s) => decodeEntities(s).replace(/\s+/g, " ").trim())
     .filter((s) => s.length > 3)
-    .filter((s) => !NAV_LABELS.has(s.toLowerCase()))
-    .filter((s) => {
-      // drop chunks that are just several nav-label words strung together
-      // (e.g. "About Team Mission Partners Vehicle Updates Contact Search")
-      const words = s.toLowerCase().split(" ");
-      const navWordCount = words.filter((w) => NAV_LABELS.has(w)).length;
-      return navWordCount < words.length * 0.6;
-    });
+    .map((s) => stripNavRuns(s))
+    .filter((s) => s.length > 3);
 }
 
 const PAGE_TITLES = {
