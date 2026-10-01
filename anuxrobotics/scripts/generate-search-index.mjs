@@ -38,19 +38,29 @@ function decodeEntities(str) {
     .replace(/&gt;/g, ">");
 }
 
+const NAV_LABELS = new Set([
+  "about", "team", "mission", "partners", "vehicle", "updates",
+  "contact", "search", "home", "anu exploration robotics",
+  "anu exploration robotics - robosub team",
+]);
+
 function htmlToChunks(html) {
   let clean = html.replace(/<script[\s\S]*?<\/script>/gi, " ");
   clean = clean.replace(/<style[\s\S]*?<\/style>/gi, " ");
-
-  // Split on every tag boundary instead of merging across them —
-  // keeps each chunk mapped to one real run of text in the DOM,
-  // so scroll-to-text can actually find it later.
   clean = clean.replace(/<[^>]+>/g, "\n");
 
   return clean
     .split("\n")
     .map((s) => decodeEntities(s).replace(/\s+/g, " ").trim())
-    .filter((s) => s.length > 3);
+    .filter((s) => s.length > 3)
+    .filter((s) => !NAV_LABELS.has(s.toLowerCase()))
+    .filter((s) => {
+      // drop chunks that are just several nav-label words strung together
+      // (e.g. "About Team Mission Partners Vehicle Updates Contact Search")
+      const words = s.toLowerCase().split(" ");
+      const navWordCount = words.filter((w) => NAV_LABELS.has(w)).length;
+      return navWordCount < words.length * 0.6;
+    });
 }
 
 const PAGE_TITLES = {
