@@ -27,11 +27,8 @@ function findHtmlFiles(dir) {
   return results;
 }
 
-function stripTags(html) {
-  let clean = html.replace(/<script[\s\S]*?<\/script>/gi, " ");
-  clean = clean.replace(/<style[\s\S]*?<\/style>/gi, " ");
-  clean = clean.replace(/<[^>]+>/g, " ");
-  clean = clean
+function decodeEntities(str) {
+  return str
     .replace(/&nbsp;/g, " ")
     .replace(/&amp;/g, "&")
     .replace(/&apos;/g, "'")
@@ -39,14 +36,20 @@ function stripTags(html) {
     .replace(/&#x27;/g, "'")
     .replace(/&lt;/g, "<")
     .replace(/&gt;/g, ">");
-  clean = clean.replace(/\s+/g, " ").trim();
-  return clean;
 }
 
-function splitIntoChunks(text) {
-  return text
-    .split(/(?<=[.!?])\s+(?=[A-Z])/)
-    .map((s) => s.trim())
+function htmlToChunks(html) {
+  let clean = html.replace(/<script[\s\S]*?<\/script>/gi, " ");
+  clean = clean.replace(/<style[\s\S]*?<\/style>/gi, " ");
+
+  // Split on every tag boundary instead of merging across them —
+  // keeps each chunk mapped to one real run of text in the DOM,
+  // so scroll-to-text can actually find it later.
+  clean = clean.replace(/<[^>]+>/g, "\n");
+
+  return clean
+    .split("\n")
+    .map((s) => decodeEntities(s).replace(/\s+/g, " ").trim())
     .filter((s) => s.length > 3);
 }
 
@@ -66,8 +69,7 @@ function main() {
 
   for (const { file, route } of pages) {
     const html = fs.readFileSync(file, "utf8");
-    const text = stripTags(html);
-    const chunks = splitIntoChunks(text);
+    const chunks = htmlToChunks(html);
     const pageTitle = PAGE_TITLES[route] || route.replace("/", "").replace(/-/g, " ");
 
     for (const chunk of chunks) {
