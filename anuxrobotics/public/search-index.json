@@ -2,7 +2,7 @@
   {
     "page": "Contact",
     "url": "/contact",
-    "text": "ANU Exploration Robotics About Team Mission Partners Vehicle Updates Contact Search About Team Mission Partners Vehicle Updates Contact Get in touch Contact Questions, sponsorship enquiries, or want to join the team?"
+    "text": "Get in touch Contact Questions, sponsorship enquiries, or want to join the team?"
   },
   {
     "page": "Contact",
@@ -22,7 +22,7 @@
   {
     "page": "Home",
     "url": "/",
-    "text": "ANU Exploration Robotics Scroll About Team Mission Partners Vehicle Updates Contact Search About Team Mission Partners Vehicle Updates Contact Exploration Robotics Lorem Ipsum bla bla bla Learn more Build Progress Latest subs Learn more → Status/Date Coming soon..."
+    "text": "Lorem Ipsum bla bla bla Learn more Build Progress Latest subs Learn more → Status/Date Coming soon..."
   },
   {
     "page": "Home",
@@ -77,7 +77,7 @@
   {
     "page": "Mission",
     "url": "/mission",
-    "text": "ANU Exploration Robotics About Team Mission Partners Vehicle Updates Contact Search About Team Mission Partners Vehicle Updates Contact ANU Exploration Robotics — per aspera ad profunda Prospectus Exploring and surveying the world around us with custom-made autonomous robots. 2026 / 2027 Who we are What the club does ANU Exploration Robotics is a student-run club operating in Canberra."
+    "text": "— per aspera ad profunda Prospectus Exploring and surveying the world around us with custom-made autonomous robots. 2026 / 2027 Who we are What the club does ANU Exploration Robotics is a student-run club operating in Canberra."
   },
   {
     "page": "Mission",
@@ -247,7 +247,7 @@
   {
     "page": "Partners",
     "url": "/sponsors",
-    "text": "ANU Exploration Robotics About Team Mission Partners Vehicle Updates Contact Search About Team Mission Partners Vehicle Updates Contact Support us Sponsors ANU Exploration Robotics is entirely student-run and relies on sponsorship to build and compete."
+    "text": "Support us Sponsors ANU Exploration Robotics is entirely student-run and relies on sponsorship to build and compete."
   },
   {
     "page": "Partners",
@@ -272,7 +272,7 @@
   {
     "page": "Team",
     "url": "/team",
-    "text": "ANU Exploration Robotics About Team Mission Partners Vehicle Updates Contact Search About Team Mission Partners Vehicle Updates Contact Who we are Team ANU Exploration Robotics is a student-run team spanning mechanical, electrical, software, and business - working together to design and build an autonomous underwater vehicle for the RobotX RoboSub competition."
+    "text": "Who we are is a student-run team spanning mechanical, electrical, software, and business - working together to design and build an autonomous underwater vehicle for the RobotX RoboSub competition."
   },
   {
     "page": "Team",
@@ -312,7 +312,7 @@
   {
     "page": "Updates",
     "url": "/updates",
-    "text": "ANU Exploration Robotics About Team Mission Partners Vehicle Updates Contact Search About Team Mission Partners Vehicle Updates Contact Build progress Updates Milestones, build logs, and testing notes as Prototype 1.0 comes together."
+    "text": "Build progress Updates Milestones, build logs, and testing notes as Prototype 1.0 comes together."
   },
   {
     "page": "Updates",
@@ -337,7 +337,7 @@
   {
     "page": "Vehicle",
     "url": "/vehicle",
-    "text": "ANU Exploration Robotics About Team Mission Partners Vehicle Updates Contact Search About Team Mission Partners Vehicle Updates Contact What we're building Vehicle We're currently developing Prototype 1.0 - a tethered proof-of-concept vehicle that demonstrates controlled underwater movement, laying the foundation for a fully autonomous competition vehicle to follow."
+    "text": "What we're building Vehicle We're currently developing Prototype 1.0 - a tethered proof-of-concept vehicle that demonstrates controlled underwater movement, laying the foundation for a fully autonomous competition vehicle to follow."
   },
   {
     "page": "Vehicle",
