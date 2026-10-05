@@ -51,6 +51,16 @@ export default function MobileMenu(){
             >
                 <ul className="flex flex-col gap-1">
                     <li>
+                        <Link
+                            href="/"
+                            onClick={closeMenu}
+                            className="block py-3 text-sm font-medium uppercase tracking-wide text-white transition-colors hover:text-[var(--coral)]"
+                        >
+                            Home
+                        </Link>
+                    </li>
+
+                    <li className="border-t border-white/10">
                         <button
                             type="button"
                             onClick={() => setAboutOpen(!aboutOpen)}

@@ -74,6 +74,11 @@ export default function NavBar(){
 
             {/* DESKTOP MENU */}
             <ul className="hidden items-center gap-10 md:ml-auto md:flex">
+                <li>
+                    <Link href="/" className="inline-block text-sm font-medium uppercase tracking-wide text-white transition-transform duration-200 hover:scale-110 hover:text-[var(--coral)]">
+                        Home
+                    </Link>
+                </li>
                 <li className="group relative">
                     <button
                         type="button"

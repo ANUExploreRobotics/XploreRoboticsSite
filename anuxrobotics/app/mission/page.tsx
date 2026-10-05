@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import ScrollReveal from "@/components/ScrollReveal";
 import NavBar from "@/components/ui/NavBar";
+import DepthBackground from "@/components/DepthBackground";
 
 const requirements = [
   {
@@ -93,6 +94,7 @@ const sponsorBenefits = [
 export default function ProspectusPage() {
   return (
     <>
+      <DepthBackground />
       <div className="relative z-[2] flex h-full w-full flex-col px-6 pt-8 md:px-12">
         <NavBar />
       </div>

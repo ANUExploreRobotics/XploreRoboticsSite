@@ -1,12 +1,9 @@
 import Link from "next/link";
 import NavBar from "@/components/ui/NavBar";
-import DepthBackground from "@/components/DepthBackground";
 
 export default function Home() {
   return (
     <>
-      <DepthBackground />
-
       {/* HERO */}
       <section className="relative h-screen min-h-[640px] overflow-hidden bg-[var(--paper)]">
         <div className="hero-image absolute inset-0">

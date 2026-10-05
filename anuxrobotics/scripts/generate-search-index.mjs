@@ -32,7 +32,7 @@ function decodeEntities(str) {
 }
 
 const NAV_RUN_WORDS = new Set([
-  "anu", "exploration", "robotics", "scroll",
+  "anu", "exploration", "robotics", "scroll", "home",
   "about", "team", "mission", "partners", "vehicle",
   "updates", "contact", "search",
 ]);
