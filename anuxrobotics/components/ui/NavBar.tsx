@@ -1,12 +1,14 @@
 'use client';
 
-import Link from 'next/link';
-import Image from 'next/image';
-import { useState, useEffect, useRef } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 
 import MobileMenu from './MobileMenu';
 import { searchSite, type SearchResult } from '@/lib/searchIndex';
+import { scrollToTextOnPage } from '@/lib/scrollToText';
+
+import Link from 'next/link';
+import Image from 'next/image';
+import { useState, useEffect, useRef } from 'react';
 
 function HighlightedSnippet({ result }: { result: SearchResult }) {
     const before = result.snippet.slice(0, result.matchStart);
@@ -29,6 +31,7 @@ function HighlightedSnippet({ result }: { result: SearchResult }) {
 
 export default function NavBar(){
     const router = useRouter();
+    const pathname = usePathname();
     const [query, setQuery] = useState('');
     const [panelOpen, setPanelOpen] = useState(false);
     const [results, setResults] = useState<SearchResult[]>([]);
@@ -55,13 +58,28 @@ export default function NavBar(){
     };
 
     const goToResult = (result: SearchResult) => {
-        const cleanSnippet = result.snippet.replace(/^…/, '').replace(/…$/, '');
+        const before = result.snippet.slice(0, result.matchStart).replace(/^…/, '');
+        const match = result.snippet.slice(
+            result.matchStart,
+            result.matchStart + result.matchLength
+        );
+        const after = result.snippet
+            .slice(result.matchStart + result.matchLength)
+            .replace(/…$/, '');
+
+        closePanel();
+
+        // Already on that page: no navigation happens, so scroll directly
+        if (pathname === result.url) {
+            setTimeout(() => scrollToTextOnPage({ before, match, after }), 350);
+            return;
+        }
+
         sessionStorage.setItem(
             'pendingScrollText',
-            JSON.stringify({ url: result.url, text: cleanSnippet })
+            JSON.stringify({ url: result.url, before, match, after })
         );
         router.push(result.url);
-        closePanel();
     };
 
     return(

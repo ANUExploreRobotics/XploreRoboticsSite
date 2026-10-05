@@ -83,7 +83,12 @@ export default function ContactPage() {
             <div className="mt-6 border-b border-[var(--line)] pb-4">
               <span className="text-[11px] uppercase tracking-wide text-white/40">Socials</span>
               <div className="mt-2 flex gap-4">
-                <a href="#" className="text-sm text-white/70 hover:text-[var(--coral)]">
+                <a
+                  href="https://www.instagram.com/explorationrobotics/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-white/70 hover:text-[var(--coral)]"
+                >
                   Instagram
                 </a>
                 <a href="#" className="text-sm text-white/70 hover:text-[var(--coral)]">

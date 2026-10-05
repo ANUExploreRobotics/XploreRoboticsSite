@@ -39,7 +39,7 @@ export default function Home() {
                 Robotics
               </h1>
               <p className="mt-6 max-w-[36ch] text-lg text-white/70">
-                Lorem Ipsum bla bla bla
+                A student-run team building autonomous underwater vehicles for RoboSub
               </p>
 
               <Link

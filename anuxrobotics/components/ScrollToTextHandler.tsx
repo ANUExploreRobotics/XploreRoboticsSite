@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
-import { scrollToTextOnPage } from "@/lib/scrollToText";
+import { scrollToTextOnPage, type ScrollTarget } from "@/lib/scrollToText";
 
 export default function ScrollToTextHandler() {
   const pathname = usePathname();
@@ -12,10 +12,12 @@ export default function ScrollToTextHandler() {
     if (!raw) return;
 
     try {
-      const { url, text } = JSON.parse(raw);
+      const { url, before, match, after } = JSON.parse(raw) as ScrollTarget & {
+        url: string;
+      };
       if (url === pathname) {
         sessionStorage.removeItem("pendingScrollText");
-        setTimeout(() => scrollToTextOnPage(text), 150);
+        setTimeout(() => scrollToTextOnPage({ before, match, after }), 250);
       }
     } catch {
       sessionStorage.removeItem("pendingScrollText");
