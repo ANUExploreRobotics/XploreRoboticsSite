@@ -19,7 +19,6 @@ const teamGroups = [
     members: [
       { name: "Bryn Whitaker", role: "Mechanical Lead" },
       { name: "Finn Wilson", role: "Member" },
-      { name: "Liam Fouracre", role: "Member" },
       { name: "Alex Jurgs", role: "Member" },
       { name: "Levi Pau", role: "Member" },
     ],
@@ -33,6 +32,7 @@ const teamGroups = [
       { name: "Ryan Marshall", role: "Member" },
       { name: "Jackson McDougall", role: "Member" },
       { name: "Chithi Gunatilake", role: "Member" },
+      { name: "Liam Fouracre", role: "Member" },
     ],
   },
   {
