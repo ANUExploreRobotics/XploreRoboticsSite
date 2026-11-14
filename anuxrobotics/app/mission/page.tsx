@@ -1,56 +1,7 @@
-import Header from "@/components/Header";
 import ScrollReveal from "@/components/ScrollReveal";
 import NavBar from "@/components/ui/NavBar";
-
-const requirements = [
-  {
-    id: "R-01",
-    requirement:
-      "Move under control in surge, heave through buoyancy control, and yaw, with passively stable roll and pitch.",
-    verification: "Demonstration",
-  },
-  {
-    id: "R-02",
-    requirement: "Remain watertight to a depth of 2.1 metres, being 20.6 kPa.",
-    verification: "Test",
-  },
-  {
-    id: "R-03",
-    requirement: "Sit within 0.5 per cent of neutral buoyancy when shut off.",
-    verification: "Test",
-  },
-  {
-    id: "R-04",
-    requirement: "Run on battery power, with variable control of acceleration and velocity.",
-    verification: "Demonstration",
-  },
-  {
-    id: "R-05",
-    requirement: "Carry a clear and accessible propulsion kill switch at the stern.",
-    verification: "Test",
-  },
-  {
-    id: "R-06",
-    requirement: "Allow major components to be accessed or replaced without redesign.",
-    verification: "Inspection",
-  },
-  {
-    id: "R-07",
-    requirement: "Leave provision for later autonomy, sensing and task mechanisms.",
-    verification: "Inspection",
-  },
-];
-
-const timeline = [
-  { when: "Aug 2026", what: "Requirements review" },
-  { when: "Sep 2026", what: "Preliminary design review" },
-  { when: "Oct 2026", what: "Critical design review" },
-  { when: "Nov/Dec 2026", what: "Implementation and assembly" },
-  { when: "Jan/Feb 2027", what: "Test readiness review" },
-  { when: "Mar 2027", what: "Pool trials and verification" },
-  { when: "Apr 2027", what: "Validation and closeout" },
-  { when: "Aug 2027", what: "RoboSub target cycle" },
-];
+import { requirements } from "@/lib/project";
+import { CONTACT_EMAIL } from "@/lib/contact";
 
 const futureDirections = [
   {
@@ -67,43 +18,20 @@ const futureDirections = [
   },
 ];
 
-const sponsorBenefits = [
-  {
-    n: "01",
-    title: "Logo on the sub",
-    desc: "Placement on the hull of the vehicle, subject to available surface area and, where the vehicle is entered in a competition, to the rules of that competition.",
-  },
-  {
-    n: "02",
-    title: "Logo on our website",
-    desc: "Placement on the supporters section of the club website for the duration of the sponsorship.",
-  },
-  {
-    n: "03",
-    title: "Invitations to our meetings and events",
-    desc: "Sponsors are welcome at club meetings, design reviews and pool trials, and are invited to the events we run through the year.",
-  },
-  {
-    n: "04",
-    title: "Features on our social media and videos",
-    desc: "Promotion across our social media posts and video content, including build logs and footage from testing and competition.",
-  },
-];
-
-export default function ProspectusPage() {
+export default function MissionPage() {
   return (
     <>
-      <div className="relative z-[2] flex h-full w-full flex-col px-6 pt-8 md:px-12">
+      <div className="relative z-[2] mx-auto flex h-full w-full max-w-[1600px] flex-col px-6 pt-8 md:px-12">
         <NavBar />
       </div>
 
       {/* COVER */}
-      <section className="mx-auto flex min-h-[70vh] max-w-[1280px] flex-col justify-center px-[8vw] py-24">
+      <section className="mx-auto max-w-[1600px] flex min-h-[70vh] flex-col justify-center px-6 md:px-12 py-24">
         <span className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--coral)]">
           ANU Exploration Robotics — per aspera ad profunda
         </span>
         <h1 className="font-display mt-4 text-[clamp(3rem,6vw,5.5rem)] font-semibold tracking-tight text-white">
-          Prospectus
+          Mission
         </h1>
         <p className="mt-5 max-w-[50ch] text-lg leading-8 text-white/70">
           Exploring and surveying the world around us with custom-made autonomous robots.
@@ -112,7 +40,7 @@ export default function ProspectusPage() {
       </section>
 
       {/* WHAT THE CLUB DOES */}
-      <section className="mx-auto max-w-[1280px] px-[8vw] py-24">
+      <section className="mx-auto max-w-[1600px] px-6 md:px-12 py-24">
         <ScrollReveal>
           <span className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--coral)]">
             Who we are
@@ -135,7 +63,7 @@ export default function ProspectusPage() {
       </section>
 
       {/* MISSION OBJECTIVES */}
-      <section className="mx-auto max-w-[1280px] border-t border-[var(--line)] px-[8vw] py-24">
+      <section className="mx-auto max-w-[1600px] border-t border-[var(--line)] px-6 md:px-12 py-24">
         <ScrollReveal>
           <span className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--coral)]">
             Mission objectives
@@ -191,23 +119,10 @@ export default function ProspectusPage() {
           </table>
         </ScrollReveal>
 
-        <ScrollReveal delay={100} className="mt-16">
-          <h3 className="font-display text-xl font-semibold text-white">Timeline</h3>
-          <div className="mt-6 grid grid-cols-2 gap-6 sm:grid-cols-4">
-            {timeline.map((t) => (
-              <div key={t.when} className="border-l border-[var(--line)] pl-4">
-                <span className="text-[11px] font-semibold uppercase tracking-wide text-[var(--cyan)]">
-                  {t.when}
-                </span>
-                <p className="mt-1 text-sm text-white/70">{t.what}</p>
-              </div>
-            ))}
-          </div>
-        </ScrollReveal>
       </section>
 
       {/* FUTURE DIRECTIONS */}
-      <section className="mx-auto max-w-[1280px] border-t border-[var(--line)] px-[8vw] py-24">
+      <section className="mx-auto max-w-[1600px] border-t border-[var(--line)] px-6 md:px-12 py-24">
         <ScrollReveal>
           <span className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--coral)]">
             Looking ahead
@@ -232,77 +147,59 @@ export default function ProspectusPage() {
         </div>
       </section>
 
-      {/* SPONSORSHIP BENEFITS */}
-      <section className="mx-auto max-w-[1280px] border-t border-[var(--line)] px-[8vw] py-24">
+      {/* SUPPORTING THE CLUB */}
+      <section className="mx-auto max-w-[1600px] border-t border-[var(--line)] px-6 md:px-12 py-24">
         <ScrollReveal>
           <span className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--coral)]">
             Support
           </span>
           <h2 className="font-display mt-3 text-3xl font-semibold text-white">
-            Sponsorship benefits
+            Supporting the club
           </h2>
           <p className="mt-5 max-w-[70ch] text-base leading-7 text-white/70">
-            The club is funded through the university, member contributions and external
-            support. Sponsorship goes toward thrusters and motor controllers, seals and hull
-            penetrators, enclosure machining and 3D printing, batteries and power
-            management, cameras and sensing, embedded compute, tether and connectors, and
-            pool hire for testing.
+            The club is funded through member contributions and external
+            support. Sponsorship goes toward parts, fabrication and testing for the build.
           </p>
           <p className="mt-4 max-w-[70ch] text-base leading-7 text-white/70">
             Support in kind is as useful to us as cash. Components, machining or fabrication
             time, workshop access and technical mentoring all contribute directly to the
-            build. Sponsors receive the following.
-          </p>
-        </ScrollReveal>
-
-        <div className="mt-10 grid gap-8 sm:grid-cols-2">
-          {sponsorBenefits.map((b, i) => (
-            <ScrollReveal key={b.n} delay={i * 80}>
-              <span className="text-2xl font-semibold text-white/20">{b.n}</span>
-              <h3 className="font-display mt-2 text-lg font-semibold text-white">
-                {b.title}
-              </h3>
-              <p className="mt-2 text-sm leading-6 text-white/60">{b.desc}</p>
-            </ScrollReveal>
-          ))}
-        </div>
-
-        <ScrollReveal delay={200} className="mt-12">
-          <p className="max-w-[70ch] text-sm leading-6 text-white/50">
-            The scale of placement and any further arrangements are agreed directly, and we
-            are glad to discuss what would suit a particular organisation.
-          </p>
-          <p className="mt-3 max-w-[70ch] text-sm leading-6 text-white/50">
-            All sponsorships are accepted on the condition that they align with the club&apos;s
-            values, academic integrity and commitment to safe practice, and with university
-            policy. The club operates independently of any commercial entity and under the
-            governance of university policies and student club regulations.
+            build. If you would like to support the club, please get in touch.
           </p>
         </ScrollReveal>
       </section>
 
       {/* CONTACT */}
-      <section className="mx-auto max-w-[1280px] border-t border-[var(--line)] px-[8vw] py-24">
+      <section className="mx-auto max-w-[1600px] border-t border-[var(--line)] px-6 md:px-12 py-24">
         <ScrollReveal>
           <h2 className="font-display text-2xl font-semibold text-white">
             ANU Exploration Robotics
           </h2>
           <p className="mt-3 text-sm leading-6 text-white/50">
-            [Room / building], Australian National University,
+            Australian National University,
             <br />
             Canberra, ACT 2600, Australia
           </p>
           <dl className="mt-8 grid max-w-[420px] grid-cols-[auto_1fr] gap-x-8 gap-y-3 text-sm">
             <dt className="font-semibold text-white/80">General enquiries</dt>
-            <dd className="text-white/50">[club email]</dd>
+            <dd>
+              <a href={`mailto:${CONTACT_EMAIL}`} className="text-white/50 hover:text-white">
+                {CONTACT_EMAIL}
+              </a>
+            </dd>
             <dt className="font-semibold text-white/80">President</dt>
-            <dd className="text-white/50">[president email]</dd>
+            <dd className="text-white/50">Mert Boyali</dd>
+            <dt className="font-semibold text-white/80">Vice President</dt>
+            <dd className="text-white/50">Tunc Can</dd>
             <dt className="font-semibold text-white/80">Secretary</dt>
-            <dd className="text-white/50">[secretary email]</dd>
+            <dd className="text-white/50">Thomas Palin</dd>
             <dt className="font-semibold text-white/80">Treasurer</dt>
-            <dd className="text-white/50">[treasurer email]</dd>
-            <dt className="font-semibold text-white/80">Website</dt>
-            <dd className="text-white/50">[website]</dd>
+            <dd className="text-white/50">Jackie Zhang</dd>
+            <dt className="font-semibold text-white/80">Instagram</dt>
+            <dd>
+              <a href="https://www.instagram.com/explorationrobotics/" target="_blank" rel="noopener noreferrer" className="text-white/50 hover:text-white">
+                @explorationrobotics
+              </a>
+            </dd>
           </dl>
         </ScrollReveal>
       </section>

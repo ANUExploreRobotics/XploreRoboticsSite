@@ -39,7 +39,7 @@ export default function BackToTop() {
                 <button
                     onClick={scrollToTop}
                     type="button"
-                    className="fixed bottom-6 right-6 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-blue-600 text-white shadow-lg transition-all duration-300 hover:bg-blue-700 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                    className="fixed bottom-6 right-6 z-50 flex h-12 w-12 items-center justify-center rounded-full border border-white bg-white text-black shadow-lg transition-all duration-300 hover:bg-black hover:text-white hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black"
                     aria-label="Back to top"
                 >
                     {/* Simple Up Arrow SVG */}

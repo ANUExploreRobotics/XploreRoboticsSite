@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Huninn&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Huninn&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
 :root {
-  --depth-color: #1a7f94;
-  --ink: #f2f0ec;
-  --paper: #0b141d;
-  --deep: #052437;
-  --cyan: #3fd1c9;
-  --coral: #ec7368;
-  --line: #22303c;
-  --hover: #ee5d5d;
+  --ink: #f5f5f5;
+  --paper: #000000;
+  --deep: #0a0a0a;
+  --cyan: #d4d4d4;
+  --coral: #a3a3a3;
+  --line: #262626;
+  --hover: #ffffff;
 }
 
 @theme inline {
@@ -34,55 +33,114 @@ h1, h2, h3, .font-display {
   letter-spacing: -0.02em;
 }
 
-.hero-white-panel {
-  background: linear-gradient(
-    120deg,
-    rgba(0,0,0,0.9) 0%,
-    rgba(0,0,0,0.7) 40%, 
-    rgba(0,0,0,0.4) 60%, 
-    rgba(0,0,0,0) 100%   
-  );
+.team-vignette {
+  background: radial-gradient(ellipse at center, transparent 45%, rgba(0,0,0,0.55) 85%, rgba(0,0,0,0.85) 100%);
+  box-shadow: inset 0 0 80px 20px rgba(0,0,0,0.6);
 }
 
-.hero-fade {
-  position: absolute;
-  inset-inline: 0;
-  bottom: 0;
-  z-index: 1;
-  height: 8px;
-  background: #070707;
-  pointer-events: none;
+.btn-primary {
+  display: inline-block;
+  border: 1px solid #fff;
+  border-radius: 9999px;
+  background: #fff;
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  transition: background-color 200ms, color 200ms;
 }
 
-.hero-image::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image:
-    radial-gradient(circle at 20% 30%, rgba(255,255,255,0.10) 0, transparent 45%),
-    radial-gradient(circle at 70% 60%, rgba(255,255,255,0.08) 0, transparent 50%),
-    radial-gradient(circle at 85% 20%, rgba(255,255,255,0.12) 0, transparent 40%);
-  mix-blend-mode: screen;
-  animation: driftLight 14s ease-in-out infinite alternate;
+.btn-primary:hover {
+  background: transparent;
+  color: #fff;
 }
 
-@keyframes driftLight {
-  from { transform: translate3d(0, 0, 0) scale(1); }
-  to { transform: translate3d(-2%, 1.5%, 0) scale(1.04); }
+.btn-outline {
+  display: inline-block;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 9999px;
+  background: transparent;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  transition: background-color 200ms, color 200ms, border-color 200ms;
 }
 
-@keyframes scrollTick {
-  0% { top: -40%; }
-  100% { top: 100%; }
+.btn-outline:hover {
+  border-color: #fff;
+  background: #fff;
+  color: #000;
 }
 
-.scroll-tick::after {
-  content: "";
-  position: absolute;
-  top: -40%;
-  left: 0;
-  width: 100%;
-  height: 40%;
-  background: white;
-  animation: scrollTick 1.8s ease-in-out infinite;
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.search-highlight-flash {
+  animation: highlightFlash 5s ease-out;
+  border-radius: 4px;
+}
+
+@keyframes highlightFlash {
+  0% { background-color: rgba(255, 255, 255, 0.25); }
+  100% { background-color: transparent; }
+}
+
+/* ---------- Home page ---------- */
+
+.font-mono-tech {
+  font-family: var(--font-jetbrains), ui-monospace, monospace;
+}
+
+/* Darkens the text side of the hero */
+.hero-grade {
+  background:
+    linear-gradient(90deg, rgba(1,8,16,0.82) 0%, rgba(1,8,16,0.45) 45%, rgba(1,8,16,0.1) 100%),
+    linear-gradient(to bottom, rgba(1,8,16,0.25) 0%, transparent 35%, rgba(1,8,16,0.55) 100%);
+}
+
+.btn,
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 2.75rem;
+  padding-inline: 1.25rem;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  transition: background-color 150ms, color 150ms, border-color 150ms;
+}
+
+.btn {
+  background: #fff;
+  color: #000;
+}
+
+.btn:hover {
+  background: #d4d4d4;
+}
+
+.btn-ghost {
+  border-color: rgba(255,255,255,0.22);
+  color: #fff;
+}
+
+.btn-ghost:hover {
+  border-color: rgba(255,255,255,0.5);
+  background: rgba(255,255,255,0.06);
+}
+
+.btn svg,
+.btn-ghost svg {
+  transition: transform 150ms;
+}
+
+.btn:hover svg,
+.btn-ghost:hover svg {
+  transform: translateX(2px);
 }

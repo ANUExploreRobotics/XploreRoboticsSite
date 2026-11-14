@@ -1,6 +1,6 @@
-import Header from "@/components/Header";
 import Link from "next/link";
 import NavBar from "@/components/ui/NavBar";
+import { CONTACT_EMAIL } from "@/lib/contact";
 
 const teamGroups = [
   {
@@ -19,7 +19,6 @@ const teamGroups = [
     members: [
       { name: "Bryn Whitaker", role: "Mechanical Lead" },
       { name: "Finn Wilson", role: "Member" },
-      { name: "Liam Fouracre", role: "Member" },
       { name: "Alex Jurgs", role: "Member" },
       { name: "Levi Pau", role: "Member" },
     ],
@@ -33,6 +32,7 @@ const teamGroups = [
       { name: "Ryan Marshall", role: "Member" },
       { name: "Jackson McDougall", role: "Member" },
       { name: "Chithi Gunatilake", role: "Member" },
+      { name: "Liam Fouracre", role: "Member" },
     ],
   },
   {
@@ -43,14 +43,6 @@ const teamGroups = [
       { name: "Matthew Lloyd", role: "Member" },
       { name: "Jeremy Firth", role: "Member" },
       { name: "Tahlia Chambers", role: "Member" },
-    ],
-  },
-  {
-    group: "Business & Marketing Team",
-    blurb: "Manages sponsorships, outreach, and public communications.",
-    members: [
-      { name: "Eric Firth", role: "Business Lead" },
-      { name: "TODO Name", role: "Member" },
     ],
   },
 ];
@@ -66,12 +58,12 @@ function slugify(name: string) {
 export default function TeamPage() {
   return (
     <>
-      <div className="relative z-[2] flex h-full w-full flex-col px-6 pt-8 md:px-12">
+      <div className="relative z-[2] mx-auto flex h-full w-full max-w-[1600px] flex-col px-6 pt-8 md:px-12">
         <NavBar />
       </div>
 
       {/* PAGE HERO */}
-      <section className="mx-auto max-w-[1280px] px-6 pb-16 pt-32">
+      <section className="mx-auto max-w-[1600px] px-6 md:px-12 pb-16 pt-32">
         <span className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--coral)]">
           Who we are
         </span>
@@ -80,23 +72,23 @@ export default function TeamPage() {
         </h1>
         <p className="mt-5 max-w-[60ch] text-base leading-7 text-white/70">
           ANU Exploration Robotics is a student-run team spanning mechanical, electrical,
-          software, and business - working together to design and build an autonomous
+          and software - working together to design and build an autonomous
           underwater vehicle for the RobotX RoboSub competition.
         </p>
         <p className="mt-3 text-sm text-white/50">
           Get in touch:{" "}
           <a
-            href="mailto:anuexplorationrobotics@gmail.com"
+            href={`mailto:${CONTACT_EMAIL}`}
             className="text-[var(--coral)]"
           >
-            anuexplorationrobotics@gmail.com
+            {CONTACT_EMAIL}
           </a>
         </p>
       </section>
 
       {/* MEMBER LIST */}
       {teamGroups.map((group) => (
-        <section key={group.group} className="mx-auto max-w-[1280px] px-6 py-10">
+        <section key={group.group} className="mx-auto max-w-[1600px] px-6 md:px-12 py-10">
           <div className="mb-8 flex items-end justify-between border-b border-[var(--line)] pb-4">
             <div>
               <h2 className="text-2xl font-semibold">{group.group}</h2>
@@ -109,12 +101,12 @@ export default function TeamPage() {
                 {/*
                   TODO: drop a photo into /public/team/ named exactly
                   "<slugified-name>.jpg" (e.g. mert-boyali.jpg) and it'll
-                  appear here automatically. Until then, the gradient shows.
+                  appear here automatically. Until then, a default avatar shows.
                 */}
                 <div
                   className="mb-3.5 aspect-square rounded-sm bg-cover bg-center"
                   style={{
-                    backgroundImage: `url(/team/${slugify(member.name)}.jpg), linear-gradient(150deg, #2a323a, #1a2027)`,
+                    backgroundImage: `url(/team/${slugify(member.name)}.jpg), url(/team/default-avatar.svg)`,
                   }}
                 />
                 <h4 className="font-display text-sm font-semibold">{member.name}</h4>
@@ -126,17 +118,17 @@ export default function TeamPage() {
       ))}
 
       {/* SPONSOR MENTION STRIP */}
-      <section className="mx-auto max-w-[1280px] border-t border-[var(--line)] px-6 py-16">
+      <section className="mx-auto max-w-[1600px] border-t border-[var(--line)] px-6 md:px-12 py-16">
         <div className="flex flex-wrap items-center justify-between gap-6">
           <p className="max-w-[46ch] text-sm text-white/60">
-            This team is proudly supported by our sponsors - their backing makes our build
-            possible.
+            Want to help us get Prototype 1.0 in the water? We&apos;re looking for our first
+            sponsors.
           </p>
           <Link
             href="/sponsors"
             className="inline-block text-sm font-semibold transition-transform hover:scale-105"
           >
-            See our sponsors →
+            Sponsor the team →
           </Link>
         </div>
       </section>
