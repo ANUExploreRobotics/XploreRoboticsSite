@@ -87,7 +87,6 @@ const PAGE_TITLES = {
   "/": "Home",
   "/team": "Team",
   "/mission": "Mission",
-  "/vehicle": "Vehicle",
   "/updates": "Updates",
   "/sponsors": "Partners",
   "/contact": "Contact",

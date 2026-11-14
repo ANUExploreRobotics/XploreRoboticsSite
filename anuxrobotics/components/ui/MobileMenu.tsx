@@ -112,15 +112,6 @@ export default function MobileMenu(){
 
                     <li className="border-t border-white/10">
                         <Link
-                            href="/vehicle"
-                            onClick={closeMenu}
-                            className="block py-3 text-sm font-medium uppercase tracking-wide text-white transition-colors hover:text-[var(--coral)]"
-                        >
-                            Vehicle
-                        </Link>
-                    </li>
-                    <li className="border-t border-white/10">
-                        <Link
                             href="/updates"
                             onClick={closeMenu}
                             className="block py-3 text-sm font-medium uppercase tracking-wide text-white transition-colors hover:text-[var(--coral)]"

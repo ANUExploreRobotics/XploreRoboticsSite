@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const NAV_LINKS = [
@@ -13,7 +12,6 @@ const NAV_LINKS = [
       { href: "/mission", label: "Mission" },
     ],
   },
-  { href: "/vehicle", label: "Vehicle" },
   { href: "/updates", label: "Updates" },
   { href: "/sponsors", label: "Partners" },
   { href: "/contact", label: "Contact" },
@@ -24,9 +22,13 @@ export default function Header() {
 
   return (
     <header className="border-b border-[var(--line)]">
-      <div className="mx-auto flex max-w-[1280px] items-center justify-between px-6 py-6">
-        <Link href="/" className="flex items-center gap-2">
-          <Image src="/logo.png" alt="Exploration Robotics logo" width={160} height={32} />
+      <div className="mx-auto max-w-[1600px] flex items-center justify-between px-6 md:px-12 py-6">
+        <Link
+          href="/"
+          aria-label="Exploration Robotics home"
+          className="text-2xl font-bold uppercase tracking-widest text-white transition-colors hover:text-[var(--coral)]"
+        >
+          EXR
         </Link>
         <nav className="hidden gap-10 md:flex">
           {NAV_LINKS.map((link) => {

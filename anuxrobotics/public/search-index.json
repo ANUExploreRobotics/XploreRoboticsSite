@@ -2,82 +2,92 @@
   {
     "page": "Contact",
     "url": "/contact",
-    "text": "Get in touch Contact Questions, sponsorship enquiries, or want to join the team?"
+    "text": "ANU Exploration Robotics EXR Exploration Robotics ANU Student Club Home About Team The people behind the build Mission What we are building and why Partners Organisations supporting us Let's talk robots."
   },
   {
     "page": "Contact",
     "url": "/contact",
-    "text": "Reach out - we'd love to hear from you."
+    "text": "Want to join, sponsor the build, or just ask a question?"
   },
   {
     "page": "Contact",
     "url": "/contact",
-    "text": "Email anuexplorationrobotics@gmail.com Based at Australian National University, Canberra Socials Instagram LinkedIn Interested in sponsoring us instead?"
-  },
-  {
-    "page": "Contact",
-    "url": "/contact",
-    "text": "See our sponsors page → Name Email Message Send message ANU Exploration Robotics - RoboSub Team"
+    "text": "Send us an email and someone from the team will get back to you. contact@anuexr.com Copy Direct lines Reach the right people 0 1 Joining the club For students who want to become a member. join@anuexr.com 0 2 Partnerships For organisations interested in sponsoring or supporting the build. partnerships@anuexr.com 0 3 Outreach For schools, events and talks. outreach@anuexr.com 0 4 Press For journalists and media. press@anuexr.com Based at Australian National University, Canberra Follow the build @explorationrobotics Sponsorship Sponsor the - RoboSub Team"
   },
   {
     "page": "Home",
     "url": "/",
-    "text": "Lorem Ipsum bla bla bla Learn more Build Progress Latest subs Learn more → Status/Date Coming soon..."
+    "text": "ANU Exploration Robotics Depth 000 m 100 m EXR Exploration Robotics ANU Student Club Home About Team The people behind the build Mission What we are building and why Partners Organisations supporting us Robots built to explore the unknown."
   },
   {
     "page": "Home",
     "url": "/",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    "text": "ANU Exploration Robotics is a student team designing robots that explore and survey places people can't easily reach."
   },
   {
     "page": "Home",
     "url": "/",
-    "text": "Status/Date Coming soon..."
+    "text": "Our current project is an autonomous underwater vehicle."
   },
   {
     "page": "Home",
     "url": "/",
-    "text": "Ut enim ad minim veniam, quis nostrud exercitation."
+    "text": "Our mission Join the team How we work A student team that designs, builds and tests its own robots, from first requirements to trials in the water."
   },
   {
     "page": "Home",
     "url": "/",
-    "text": "Status/Date Coming soon..."
+    "text": "Underwater first Water, pressure and distance shape every design decision."
   },
   {
     "page": "Home",
     "url": "/",
-    "text": "Excepteur sint occaecat cupidatat non proident."
+    "text": "We start underwater, where there is no room for a leak."
   },
   {
     "page": "Home",
     "url": "/",
-    "text": "Who we are About us ANU Exploration Robotics is a student-run team designing and building an autonomous underwater vehicle for the RobotX RoboSub competition."
+    "text": "Run by students Engineers, programmers and designers from across ANU, of every year and discipline."
   },
   {
     "page": "Home",
     "url": "/",
-    "text": "We're currently developing Prototype 1.0 — a tethered proof-of-concept vehicle that demonstrates controlled underwater movement, laying the foundation for a fully autonomous competition vehicle to follow."
+    "text": "Meet the team Safety designed in A kill switch, electrical isolation, water ingress detection and battery monitoring are part of the design from the start."
   },
   {
     "page": "Home",
     "url": "/",
-    "text": "We're a small, hands-on crew spanning mechanical, electrical, software, and business — following a disciplined design process from requirements through to in-water testing."
+    "text": "In the lab Built side by side Design, code and testing happen in the same room."
   },
   {
     "page": "Home",
     "url": "/",
-    "text": "Always looking for people who want to build something real."
+    "text": "Members work across mechanical, electrical and software, and learn from each other as the vehicle comes together."
   },
   {
     "page": "Home",
     "url": "/",
-    "text": "Contact us Who's building it Meet the team Learn more → Executive Team Leads strategy, planning, and overall project direction Mechanical Team Designs and builds the submarine's structure and hardware Electronics Team Handles wiring, sensors, and onboard hardware Software Team Develops control, navigation, and scanning software Business & Marketing Team Manages sponsorships, outreach, and public communications Sponsor Sponsor Sponsor Sponsor Sponsor ANU Exploration Robotics - RoboSub Team"
+    "text": "Follow our progress Get involved Want to build something real?"
+  },
+  {
+    "page": "Home",
+    "url": "/",
+    "text": "Open to students of any year and discipline."
+  },
+  {
+    "page": "Home",
+    "url": "/",
+    "text": "No robotics experience needed."
+  },
+  {
+    "page": "Home",
+    "url": "/",
+    "text": "Join the team Sponsor us ANU Exploration Robotics - RoboSub Team"
   },
   {
     "page": "Mission",
     "url": "/mission",
-    "text": "— per aspera ad profunda Prospectus Exploring and surveying the world around us with custom-made autonomous robots. 2026 / 2027 Who we are What the club does ANU Exploration Robotics is a student-run club operating in Canberra."
+    "text": "ANU Exploration Robotics EXR Exploration Robotics ANU Student Club Home About Team The people behind the build Mission What we are building and why Partners Organisations supporting us — per aspera ad profunda Mission Exploring and surveying the world around us with custom-made autonomous robots. 2026 / 2027 Who we are What the club does ANU Exploration Robotics is a student-run club operating in Canberra."
   },
   {
     "page": "Mission",
@@ -132,42 +142,67 @@
   {
     "page": "Mission",
     "url": "/mission",
-    "text": "ID Requirement Verification R-01 Move under control in surge, heave through buoyancy control, and yaw, with passively stable roll and pitch."
+    "text": "ID Requirement Verification R-01 Have a waterproof housing rated for depths of up to 2.1 metres, which is 20.6 kPa."
   },
   {
     "page": "Mission",
     "url": "/mission",
-    "text": "Demonstration R-02 Remain watertight to a depth of 2.1 metres, being 20.6 kPa."
+    "text": "Test R-02 Achieve controlled surge, heave through buoyancy control, and yaw movement."
   },
   {
     "page": "Mission",
     "url": "/mission",
-    "text": "Test R-03 Sit within 0.5 per cent of neutral buoyancy when shut off."
+    "text": "Demonstration R-03 Be neutrally buoyant to within 0.5 percent of its mass when shut off."
   },
   {
     "page": "Mission",
     "url": "/mission",
-    "text": "Test R-04 Run on battery power, with variable control of acceleration and velocity."
+    "text": "Test R-04 Maintain predictable underwater handling."
   },
   {
     "page": "Mission",
     "url": "/mission",
-    "text": "Demonstration R-05 Carry a clear and accessible propulsion kill switch at the stern."
+    "text": "Demonstration R-05 Be controlled by an operator from an offboard computer through a tethered communications link."
   },
   {
     "page": "Mission",
     "url": "/mission",
-    "text": "Test R-06 Allow major components to be accessed or replaced without redesign."
+    "text": "Demonstration R-06 Include a clear and accessible kill switch at the stern."
   },
   {
     "page": "Mission",
     "url": "/mission",
-    "text": "Inspection R-07 Leave provision for later autonomy, sensing and task mechanisms."
+    "text": "Propulsion must not turn back on when the kill switch is deactivated after use."
   },
   {
     "page": "Mission",
     "url": "/mission",
-    "text": "Inspection Timeline Aug 2026 Requirements review Sep 2026 Preliminary design review Oct 2026 Critical design review Nov/Dec 2026 Implementation and assembly Jan/Feb 2027 Test readiness review Mar 2027 Pool trials and verification Apr 2027 Validation and closeout Aug 2027 RoboSub target cycle Looking ahead Future directions Although our current goals align with submarine development for the RobotX RoboSub competition, in the future we are looking forward to expanding our design principles into other design projects and different vehicles."
+    "text": "Test R-07 Passively maintain stable roll and pitch during normal operation."
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Analysis and test R-08 Be battery operated."
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Inspection R-09 Have variable propulsion control to adjust the acceleration and velocity of the vehicle."
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Demonstration R-10 Allow major components to be accessed or replaced without requiring redesign."
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Inspection R-11 Provide sufficient provisions for the future integration of upgrades and competition specific mechanisms."
+  },
+  {
+    "page": "Mission",
+    "url": "/mission",
+    "text": "Inspection Looking ahead Future directions Although our current goals align with submarine development for the RobotX RoboSub competition, in the future we are looking forward to expanding our design principles into other design projects and different vehicles."
   },
   {
     "page": "Mission",
@@ -202,12 +237,12 @@
   {
     "page": "Mission",
     "url": "/mission",
-    "text": "Support Sponsorship benefits The club is funded through the university, member contributions and external support."
+    "text": "Support Supporting the club The club is funded through member contributions and external support."
   },
   {
     "page": "Mission",
     "url": "/mission",
-    "text": "Sponsorship goes toward thrusters and motor controllers, seals and hull penetrators, enclosure machining and 3D printing, batteries and power management, cameras and sensing, embedded compute, tether and connectors, and pool hire for testing."
+    "text": "Sponsorship goes toward parts, fabrication and testing for the build."
   },
   {
     "page": "Mission",
@@ -222,32 +257,17 @@
   {
     "page": "Mission",
     "url": "/mission",
-    "text": "Sponsors receive the following. 01 Logo on the sub Placement on the hull of the vehicle, subject to available surface area and, where the vehicle is entered in a competition, to the rules of that competition. 02 Logo on our website Placement on the supporters section of the club website for the duration of the sponsorship. 03 Invitations to our meetings and events Sponsors are welcome at club meetings, design reviews and pool trials, and are invited to the events we run through the year. 04 Features on our social media and videos Promotion across our social media posts and video content, including build logs and footage from testing and competition."
+    "text": "If you would like to support the club, please get in touch."
   },
   {
     "page": "Mission",
     "url": "/mission",
-    "text": "The scale of placement and any further arrangements are agreed directly, and we are glad to discuss what would suit a particular organisation."
-  },
-  {
-    "page": "Mission",
-    "url": "/mission",
-    "text": "All sponsorships are accepted on the condition that they align with the club's values, academic integrity and commitment to safe practice, and with university policy."
-  },
-  {
-    "page": "Mission",
-    "url": "/mission",
-    "text": "The club operates independently of any commercial entity and under the governance of university policies and student club regulations."
-  },
-  {
-    "page": "Mission",
-    "url": "/mission",
-    "text": "ANU Exploration Robotics [Room / building], Australian National University, Canberra, ACT 2600, Australia General enquiries [club email] President [president email] Secretary [secretary email] Treasurer [treasurer email] Website [website] ANU Exploration Robotics - RoboSub Team"
+    "text": "ANU Exploration Robotics Australian National University, Canberra, ACT 2600, Australia General enquiries contact@anuexr.com President Mert Boyali Vice President Tunc Can Secretary Thomas Palin Treasurer Jackie Zhang Instagram @explorationrobotics ANU Exploration Robotics - RoboSub Team"
   },
   {
     "page": "Partners",
     "url": "/sponsors",
-    "text": "Support us Sponsors ANU Exploration Robotics is entirely student-run and relies on sponsorship to build and compete."
+    "text": "ANU Exploration Robotics EXR Exploration Robotics ANU Student Club Home About Team The people behind the build Mission What we are building and why Partners Organisations supporting us Support us Sponsors ANU Exploration Robotics is entirely student-run and relies on sponsorship to build and compete."
   },
   {
     "page": "Partners",
@@ -257,12 +277,12 @@
   {
     "page": "Partners",
     "url": "/sponsors",
-    "text": "Gold Logo on vehicle Logo on website homepage Social media shoutouts Competition credits Silver Logo on website sponsors page Social media mention Competition credits Bronze Logo on website sponsors page Competition credits Thank you Our sponsors Sponsor Sponsor Sponsor Sponsor Sponsor Interested in partnering with us?"
+    "text": "We're looking for our founding sponsors."
   },
   {
     "page": "Partners",
     "url": "/sponsors",
-    "text": "We'd love to talk."
+    "text": "Support in kind, such as parts, machining time, or mentoring, is just as valuable as cash."
   },
   {
     "page": "Partners",
@@ -272,12 +292,12 @@
   {
     "page": "Team",
     "url": "/team",
-    "text": "Who we are is a student-run team spanning mechanical, electrical, software, and business - working together to design and build an autonomous underwater vehicle for the RobotX RoboSub competition."
+    "text": "ANU Exploration Robotics EXR Exploration Robotics ANU Student Club Home About Team The people behind the build Mission What we are building and why Partners Organisations supporting us Who we are is a student-run team spanning mechanical, electrical, and software - working together to design and build an autonomous underwater vehicle for the RobotX RoboSub competition."
   },
   {
     "page": "Team",
     "url": "/team",
-    "text": "Get in touch: anuexplorationrobotics@gmail.com Executive Team Leads strategy, planning, and overall project direction."
+    "text": "Get in touch: contact@anuexr.com Executive Team Leads strategy, planning, and overall project direction."
   },
   {
     "page": "Team",
@@ -287,76 +307,46 @@
   {
     "page": "Team",
     "url": "/team",
-    "text": "Bryn Whitaker Mechanical Lead Finn Wilson Member Liam Fouracre Member Alex Jurgs Member Levi Pau Member Electronics Team Handles wiring, sensors, and onboard hardware."
+    "text": "Bryn Whitaker Mechanical Lead Finn Wilson Member Alex Jurgs Member Levi Pau Member Electronics Team Handles wiring, sensors, and onboard hardware."
   },
   {
     "page": "Team",
     "url": "/team",
-    "text": "Dasun Weliwita Electronics Lead Rani Mamootil Member Ryan Marshall Member Jackson McDougall Member Chithi Gunatilake Member Software Team Develops control, navigation, and scanning software."
+    "text": "Dasun Weliwita Electronics Lead Rani Mamootil Member Ryan Marshall Member Jackson McDougall Member Chithi Gunatilake Member Liam Fouracre Member Software Team Develops control, navigation, and scanning software."
   },
   {
     "page": "Team",
     "url": "/team",
-    "text": "Joel Crispe Software Lead Matthew Lloyd Member Jeremy Firth Member Tahlia Chambers Member Business & Marketing Team Manages sponsorships, outreach, and public communications."
+    "text": "Joel Crispe Software Lead Matthew Lloyd Member Jeremy Firth Member Tahlia Chambers Member Want to help us get Prototype 1.0 in the water?"
   },
   {
     "page": "Team",
     "url": "/team",
-    "text": "Eric Firth Business Lead TODO Name Member This team is proudly supported by our sponsors - their backing makes our build possible."
+    "text": "We're looking for our first sponsors."
   },
   {
     "page": "Team",
     "url": "/team",
-    "text": "See our sponsors → ANU Exploration Robotics - RoboSub Team"
+    "text": "Sponsor the team → ANU Exploration Robotics - RoboSub Team"
   },
   {
     "page": "Updates",
     "url": "/updates",
-    "text": "Build progress Updates Milestones, build logs, and testing notes as Prototype 1.0 comes together."
+    "text": "ANU Exploration Robotics EXR Exploration Robotics ANU Student Club Home About Team The people behind the build Mission What we are building and why Partners Organisations supporting us Build progress Updates Build logs and testing notes as Prototype 1.0 comes together."
   },
   {
     "page": "Updates",
     "url": "/updates",
-    "text": "Milestone TODO Month 2026 TODO update title TODO - short summary of what happened, what was tested, or what shipped."
+    "text": "Milestone 25 August 2026 Prototype 1.0 project brief approved The project brief for Prototype 1.0 was approved, setting eleven requirements (R-01 to R-11), each with its own verification method."
   },
   {
     "page": "Updates",
     "url": "/updates",
-    "text": "Build log TODO Month 2026 TODO update title TODO - short summary of what happened, what was tested, or what shipped."
-  },
-  {
-    "page": "Updates",
-    "url": "/updates",
-    "text": "Testing TODO Month 2026 TODO update title TODO - short summary of what happened, what was tested, or what shipped."
+    "text": "It defines the vehicle as a tethered proof of concept for controlled surge, heave, and yaw, and commits the team to the V model, with four formal reviews between requirements and pool trials."
   },
   {
     "page": "Updates",
     "url": "/updates",
     "text": "ANU Exploration Robotics - RoboSub Team"
-  },
-  {
-    "page": "Vehicle",
-    "url": "/vehicle",
-    "text": "What we're building Vehicle We're currently developing Prototype 1.0 - a tethered proof-of-concept vehicle that demonstrates controlled underwater movement, laying the foundation for a fully autonomous competition vehicle to follow."
-  },
-  {
-    "page": "Vehicle",
-    "url": "/vehicle",
-    "text": "Vehicle name Prototype 1.0 Type Tethered proof-of-concept Target depth TODO m Propulsion TODO thrusters Power TODO Dimensions TODO cm How it works Systems breakdown Mechanical Structure & hardware TODO - hull design, frame material, watertight housing, and buoyancy approach."
-  },
-  {
-    "page": "Vehicle",
-    "url": "/vehicle",
-    "text": "Electronics Wiring & sensors TODO - power distribution, sensor suite, and onboard hardware layout."
-  },
-  {
-    "page": "Vehicle",
-    "url": "/vehicle",
-    "text": "Software Control & navigation TODO - control loop, navigation stack, and seabed-scanning pipeline."
-  },
-  {
-    "page": "Vehicle",
-    "url": "/vehicle",
-    "text": "In the workshop Gallery ANU Exploration Robotics - RoboSub Team"
   }
 ]
